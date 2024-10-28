@@ -1,0 +1,32 @@
+{
+  "name": "codecept-js-appium-app-browserstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sample-test": "browserstack-node-sdk codeceptjs run -c src/test/sample/codecept.conf.js --steps",
+    "sample-local-test": "browserstack-node-sdk codeceptjs run -c src/test/local/codecept.conf.js --steps",
+    "postinstall": "npm update browserstack-node-sdk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/browserstack/codecept-js-appium-app-browserstack"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/browserstack/codecept-js-appium-app-browserstack/issues"
+  },
+  "homepage": "https://github.com/browserstack/codecept-js-appium-app-browserstack#readme",
+  "devDependencies": {
+    "browserstack-node-sdk": "latest",
+    "codeceptjs": "^3.2.3",
+    "webdriverio": "^7.17.4"
+  },
+  "dependencies": {
+    "appium": "^2.12.1",
+    "browserstack-local": "^1.5.2",
+    "dotenv": "^16.0.0"
+  }
+}
