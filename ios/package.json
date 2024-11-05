@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sample-test": "browserstack-node-sdk codeceptjs run -c src/test/sample/codecept.conf.js --steps",
-    "sample-local-test": "BROWSERSTACK_APP=\"./LocalSample.apk\" browserstack-node-sdk codeceptjs run -c src/test/local/codecept.conf.js --steps",
+    "sample-local-test": "BROWSERSTACK_APP=\"./LocalSample.ipa\" browserstack-node-sdk codeceptjs run -c src/test/local/codecept.conf.js --steps",
     "postinstall": "npm update browserstack-node-sdk"
   },
   "repository": {
